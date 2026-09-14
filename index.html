@@ -54,7 +54,7 @@
 
 <script>
     function validateAndCalc(el, allowDecimal = false) {
-        // 僅允許輸入數字 (若 allowDecimal 為 true 則允許一個小數點)
+        // 僅允許輸入數字 (若 allowDecimal 為 true 則 允許一個小數點)
         if (allowDecimal) {
             el.value = el.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
         } else {
